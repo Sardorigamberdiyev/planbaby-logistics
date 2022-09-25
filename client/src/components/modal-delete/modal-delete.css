@@ -1,0 +1,61 @@
+.modal-delete {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-delete .modal-content {
+  min-height: 384px;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  padding: 40px 56px;
+  background-color: white;
+}
+
+.modal-delete .modal-content h1 {
+  color: #1d1d1d;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.modal-delete .modal-content h1 span {
+  color: tomato;
+}
+
+.modal-delete .modal-content .btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-delete .modal-content .btn-wrapper button {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-delete .modal-content .btn-wrapper button:focus {
+  outline-style: none;
+}
+
+.modal-delete .modal-content .btn-wrapper button:nth-child(1) {
+  background-color: lightgreen;
+}
+
+.modal-delete .modal-content .btn-wrapper button:nth-child(2) {
+  background-color: red;
+}

@@ -1,0 +1,18 @@
+.input-value-tugatish .input-value-wrap{
+    width: 100%;
+} 
+.input-value-tugatish .input-value-wrap textarea{
+    height: 120px;
+    outline: none;
+    border: none;
+    background-color: #F6F8FE;
+    border-radius: 8px;
+    padding: 16px;
+}
+.input-value-item-tugatish input{
+    width: 200px;
+}
+.order-view .input-value-group .default span{
+    opacity: 0.5;
+    text-transform: capitalize;
+}

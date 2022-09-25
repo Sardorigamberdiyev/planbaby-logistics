@@ -1,0 +1,257 @@
+
+.my-orders {
+    padding: 2rem;
+}
+
+.my-orders .my-orders-wrapper {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 2px 4px 16px 0 #d99ee241;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-orders .my-orders-wrapper.show-menu {
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-data {
+    width: 24%;
+}
+
+.my-orders .my-orders-wrapper .user-data .user-data-wrapper {
+    background-color: #FAFAFE;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-data-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-orders .my-orders-wrapper .user-data-avatar div {
+    margin-bottom: .75rem;
+}
+
+.my-orders .my-orders-wrapper .user-data-avatar .user-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.my-orders .my-orders-wrapper .user-data-avatar .user-name {
+    color: #1D1D1D;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.my-orders .my-orders-wrapper .user-data-avatar .user-role {
+    color: #6691E0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.my-orders .my-orders-wrapper .user-data-profile ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.my-orders .my-orders-wrapper .user-data-profile ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-data-profile ul li:not(:nth-child(3)) {
+    padding-bottom: 1.5rem;
+}
+
+.my-orders .my-orders-wrapper .user-data-profile ul li span {
+    color: #5D5D7E;
+    font-weight: 600;
+}
+
+.my-orders .my-orders-wrapper .user-data-profile ul li div {
+    color: #1D1D1D;
+    font-size: 18px;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-quantity-info > span {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-quantity-info .input-text {
+    width: 300px;
+    height: 64px;
+    padding: 1rem 1.5rem;
+    background-color: #FAFAFE;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-quantity-info .input-text span {
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-quantity-info .input-text .active-orders-quantity {
+    color: #6691E0;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-quantity-info .input-text .success-orders-quantity {
+    color: #53EDC8;   
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval > span {
+    color: #1D1D1D;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form {
+    display: flex;
+    align-items: center;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form > div {
+    display: flex;
+    align-items: center;
+    padding-right: .5rem;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form > div span {
+    color: #1D1D1D;
+    padding-right: .5rem;
+    font-size: 18px;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form > div input {
+    width: 120px;
+    height: 64px;
+    padding: 1rem;
+    font-size: 17px;
+    color: #1D1D1D;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border: .5px solid transparent;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form > div input:focus {
+    border-color: #6691E0;
+    outline-style: none;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form > div input::placeholder {
+    color: #9F4FDE;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form button {
+    width: 180px;
+    height: 64px;
+    margin-left: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition-duration: .25s;
+    color: white;
+    font-size: 18px;
+    border-radius: .5rem;
+    background-color: #6691E0;
+    border: none;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-header .orders-filter-interval form button:active {
+    background-color: #3669c9;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-list .date-interval {
+    margin-bottom: 1rem;
+    display: none;
+    background-color: #FAFAFE;
+    border-radius: .5rem;
+    padding: .75rem;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .orders-filter-list .date-interval.show {
+    display: block;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button {
+    width: 32%;
+    padding: 1rem;
+    text-align: center;
+    transition-duration: .25s;
+    font-size: 24px;
+    background-color: #6691E0;
+    border-radius: .5rem;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button:active {
+    background-color: #3669c9;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button.btn-still-disable {
+    opacity: .5;
+    cursor: default;
+}
+
+@media (max-width: 576px) {
+    .my-orders {
+        padding: 1rem!important;
+    }
+
+    .my-orders .my-orders-wrapper {
+        padding: 1rem!important;
+    }
+}

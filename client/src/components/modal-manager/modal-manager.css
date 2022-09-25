@@ -1,0 +1,151 @@
+.modal-manager-icon .modal-active-order {
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-manager-icon .modal-active-order .modal-content {
+    width: 57rem;
+    max-height: 80%;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+.modal-manager-icon .modal-active-order .modal-content .modal-content-wrapper .close-modal {
+    font-size: 2.5rem;
+    color: #D72525;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+}
+.modal-manager-icon .manager-modal-search input{
+    width: 100%;
+    outline: none;
+    background: #FAFAFE;
+    border: 0.5px solid #D6D7E3;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.modal-manager-icon .manager-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 30rem;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+   ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.modal-manager-icon .manager-list .manager-list-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition-duration: .2s;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+.modal-manager-icon .manager-list .manager-list-item:hover {
+    background-color: #53EDC8;
+}
+.modal-manager-icon .manager-list .manager-list-item:hover {
+    color: #fff;
+}
+.modal-manager-icon .manager-list .manager-list-item.active {
+    background-color: #53EDC8;
+}
+
+.modal-manager-icon .manager-list .manager-list-item .manager-index {
+    color: #1D1D1D;
+    margin-right: 1rem;
+}
+
+.modal-manager-icon .manager-list .manager-list-item.active .manager-index,
+.modal-manager-icon .manager-list .manager-list-item:hover .manager-index {
+    color: white;
+}
+
+.modal-manager-icon .manager-list .manager-list-item .manager-info {
+    width: 100%;
+    transition-duration: .2s;
+
+}
+
+.modal-manager-icon .manager-list .manager-list-item .manager-info .span {
+    color: #1D1D1D;
+    margin: 0;
+    min-width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal-manager-icon .manager-list .manager-list-item.active .manager-info .span,
+.modal-manager-icon .manager-list .manager-list-item:hover .manager-info .span {
+    color: white;
+}
+
+.modal-manager-icon .error-msg {
+    color: #D72525;
+    font-size: 14px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+}
+
+.modal-manager-icon .manager-list .manager-list-item i {
+    width: 20px;
+    height: 20px;
+    background-color: #1D1D1D;
+    visibility: hidden;
+}
+
+.modal-manager-icon .manager-list .manager-list-item.active i,
+.modal-manager-icon .manager-list .manager-list-item:hover i {
+    background-color: white;
+    visibility: visible;
+}
+ .manager-input-footer-wrapper{
+     margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.manager-input-footer-wrapper button{
+    width: 360px;
+    height: 56px;
+    background: #6691E0;
+    border-radius: 8px;
+    color: #fff;
+    line-height: 32px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem; 
+}

@@ -1,0 +1,8 @@
+{
+    "port": 3000,
+    "mongoUri": "mongodb://localhost:27017,localhost:27018,localhost:27019/logistics",
+    "jwtSecretKey": "prodSecretKey",
+    "jwtSecretKeyRefresh": "prodSecretKeyRefresh",
+    "tokenTgBot": "prodTokenTgBot",
+    "tgChatId": "prodTgChatId"
+}

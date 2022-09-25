@@ -1,0 +1,177 @@
+.filter-modal {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 270px;
+  padding: 10px;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px #c3d1fd;
+  border-radius: 10px;
+}
+
+.filter-modal .filter-wrapper {
+  background: #f6f8fe;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.filter-modal .filter-wrapper {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #d6d7e3;
+}
+.filter-modal .filter-wrapper .filter-text-color,
+.filter-modal .filter-wrapper input {
+  color: #1d1d1d;
+}
+.filter-modal .filter-wrapper .filter-id span {
+  display: block;
+}
+.filter-modal .filter-wrapper .filter-id .DatePicker__input {
+  width: 235px;
+}
+.datapicker-input {
+  color: #c3d1fd;
+}
+.filter-modal .filter-wrapper input {
+  border: 0.5px solid #d6d7e3;
+}
+.filter-modal .filter-wrapper input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d6d7e3;
+}
+.filter-modal .filter-wrapper h5 {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.filter-modal .filter-wrapper h5 span {
+  color: red;
+  cursor: pointer;
+}
+
+.filter-modal .filter-wrapper .filter-id {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.filter-modal .filter-wrapper .filter-id input {
+  padding: 10px;
+  border-radius: 5px;
+}
+.kuryer-modal-viloyat p {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.kuryer-modal-viloyat .kuryer-modal-input {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: #fafafe;
+  border: 0.5px solid #d6d7e3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.kuryer-modal-viloyat .kuryer-modal-input .fitermodal-search {
+  background-color: #5555;
+}
+
+.kuryer-modal-viloyat .kuryer-modal-input input,
+.kuryer-modal-viloyat .kuryer-modal-input input:focus,
+.kuryer-modal-viloyat .kuryer-modal-input input:active,
+.kuryer-modal-viloyat .kuryer-modal-input input:checked {
+  border: none;
+  outline: none;
+  background-color: #fafafe;
+}
+
+.kuryer-modal-viloyat ul {
+  list-style-type: none;
+  overflow-y: scroll;
+  max-height: 200px;
+  padding-left: 0;
+}
+
+.kuryer-modal-viloyat ul li {
+  transition-duration: 0.2s;
+}
+
+.kuryer-modal-viloyat ul li .active {
+  color: #6691e0;
+}
+
+.kuryer-modal-viloyat ul li:hover {
+  color: #6691e0;
+}
+
+.kuryer-modal-viloyat ul li input {
+  border: 0.5px solid #d6d7e3;
+}
+
+.filter-checked .input-checked {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1.5px solid #d6d7e3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+  margin-right: 20px;
+}
+.kuryer-modal-viloyat ul.filter-checked li {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.kuryer-modal-viloyat ul.filter-checked li .active-checker {
+  background-color: #6691e0;
+}
+
+@media (max-width: 576px) {
+  .filter-modal {
+    width: 250px;
+  }
+
+  .filter-modal .filter-wrapper .filter-id {
+    width: 100%;
+  }
+
+  .filter-modal .filter-wrapper .filter-id input {
+    width: 100%;
+  }
+
+  .kuryer-modal-viloyat .kuryer-modal-input input {
+    width: 100%;
+  }
+
+  .kuryer-modal-viloyat ul.filter-checked li {
+    font-size: 14px;
+  }
+
+  .filter-modal .filter-wrapper .filter-id .DatePicker {
+    width: 100%;
+  }
+
+  .filter-modal .filter-wrapper .filter-id .DatePicker input {
+    width: 100%;
+  }
+}

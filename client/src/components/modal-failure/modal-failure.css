@@ -1,0 +1,112 @@
+
+.modal-failure {
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-failure .modal-content {
+    width: 40rem;
+    background-color: white;
+    border-radius: .5rem;
+    position: relative;
+    padding: 2.5rem 3.5rem;
+}
+
+.modal-failure .modal-content h1 {
+    margin: 0 0 3.5rem 0;
+    text-align: center;
+    color: #1D1D1D;
+    font-size: 2rem;
+}
+
+.modal-failure .modal-content .close-failure-modal {
+    position: absolute;
+    color: red;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 1;
+    top: 2.25rem;
+    right: 3.25rem;
+}
+
+.modal-failure .modal-content .failure-text-wrapper {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-failure .modal-content .failure-text-wrapper .text {
+    display: flex;
+    flex-direction: column;
+    color: #1d1d1d8e;
+}
+
+.modal-failure .modal-content .failure-text-wrapper .text span {
+    margin-bottom: .5rem;
+    color: #1D1D1D;
+    opacity: .6;
+}
+
+.modal-failure .modal-content .failure-text-wrapper .text div {
+    padding: 1rem 1.5rem;
+    background-color: #f6f8fe8e;
+    border-radius: .5rem;
+}
+
+.modal-failure .modal-content .input-costum {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-failure .modal-content .input-costum label {
+    margin-bottom: .5rem;
+    color: #1D1D1D;
+}
+
+.modal-failure .modal-content .input-costum textarea {
+    max-width: 92%;
+    min-width: 92%;
+    max-height: 150px;
+    min-height: 60px;
+    padding: 1.5rem;
+    transition-duration: .2;
+    color: #1D1D1D;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+    border: .5px solid transparent;
+}
+
+.modal-failure .modal-content .input-costum textarea:focus {
+    border-color: #6691E0;
+    outline-style: none;
+}
+
+.modal-failure .modal-content .input-costum textarea::placeholder {
+    color: #D6D7E3;
+}
+
+.modal-failure .modal-content button {
+    width: 50%;
+    padding: 1rem 0;
+    background-color: #6691E0;
+    border-radius: .5rem;
+    border: none;
+    transition-duration: .2s;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-failure .modal-content button:active {
+    background-color: #3669c9;
+}

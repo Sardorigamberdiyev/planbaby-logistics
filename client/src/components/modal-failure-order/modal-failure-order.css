@@ -1,0 +1,250 @@
+
+
+.modal-failure-order {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-failure-order .modal-content {
+    width: 40rem;
+    max-height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem 3.5rem;
+    position: relative;
+}
+
+.modal-failure-order .modal-content::-webkit-scrollbar {
+    width: 6px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.modal-failure-order .modal-content::-webkit-scrollbar-track {
+    background-color: #D6D7E3;
+}
+
+.modal-failure-order .modal-content::-webkit-scrollbar-thumb {
+    background-color: #FB66B8;
+    border-radius: .5rem;
+}
+
+.modal-failure-order .modal-content .close-failure-modal {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #D72525;
+    position: absolute;
+    top: 7.5%;
+    right: 7.5%;
+}
+
+.modal-failure-order .modal-content h1 {
+    color: #1D1D1D;
+    text-align: center;
+    margin: 0 0 3.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .order-view {
+    height: 0;
+    overflow: hidden;
+    border-radius: .5rem;
+    transition-duration: .2s;
+    margin: 2rem 0;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .order-view.open-order-view {
+    height: 400px;
+    padding: 1rem;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px 1px #d99ee281;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .order-view::-webkit-scrollbar {
+    width: 6px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .order-view::-webkit-scrollbar-track {
+    background-color: #D6D7E3;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .order-view::-webkit-scrollbar-thumb {
+    background-color: #1D1D1D;
+    border-radius: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-group.unset-jc {
+    justify-content: flex-start;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-group.unset-jc .input-value-wrapper {
+    margin-right: 1.5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper.default {
+    width: 240px;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper.source {
+    width: 185px;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper span {
+    color: #1D1D1D;
+    margin-bottom: .5rem;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper i {
+    background-color: #1D1D1D;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper div {
+    padding: 1rem 1.5rem;
+    color: #D6D7E3;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-value-wrapper .payment {
+    padding: .75rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .textarea-value-wrapper {
+    margin-bottom: 2rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .textarea-value-wrapper span {
+    color: #1D1D1D;
+    display: block;
+    opacity: 0.5;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .textarea-value-wrapper div {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+    color: #D6D7E3;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .textarea-value-wrapper div p {
+    color: #1D1D1D;
+    margin: 0;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-multi-value-wrapper {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-multi-value-wrapper span {
+    color: #1D1D1D;
+    margin-bottom: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-multi-value ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .input-multi-value ul li {
+    padding: 1rem 1.5rem;
+    margin-bottom: .5rem;
+    color: white;
+    background-color: #53EDC8;
+    border-radius: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button {
+    width: 49%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .2s;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(1) {
+    background-color: #F5F5F5;
+    color: #1D1D1D;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(1) i {
+    width: 18px;
+    height: 18px;
+    transition-duration: .2s;
+    background-color: #1D1D1D;
+    margin-left: .5rem;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(1) i.rotate {
+    transform: rotate(180deg);
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(2) {
+    background-color: #6691E0;
+    color: white;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(2):active {
+    background-color: #3669c9;
+}
+
+.modal-failure-order .modal-content .failure-text-wrapper .btn-wrapper button:nth-child(2) i {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    margin-right: .5rem;
+}

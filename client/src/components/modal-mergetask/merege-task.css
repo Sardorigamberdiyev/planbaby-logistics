@@ -1,0 +1,125 @@
+.modal-merege {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-merege .modal-content {
+  width: 840px;
+  min-height: 384px;
+  border-radius: 0.5rem;
+  padding: 40px 56px;
+  background-color: white;
+}
+
+.modal-merege .modal-content h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #404040;
+}
+
+.modal-merege .modal-content h1 span {
+  color: red;
+  position: absolute;
+  right: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.modal-merege .modal-content form {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-merege .modal-content form .css-2b097c-container {
+  width: 100%;
+}
+.modal-merege .modal-content form .css-yk16xz-control,
+.modal-merege .modal-content form .css-1pahdxg-control {
+  padding: 12px;
+  background: #ffffff;
+  border: 0.5px solid #d6d7e3;
+  box-shadow: 2px 4px 16px rgba(184, 184, 184, 0.25),
+    0px 8px 50px rgba(219, 219, 219, 0.1);
+  border-radius: 6px;
+  outline: none;
+  padding: 6px;
+}
+.modal-merege .modal-content form .css-26l3qy-menu {
+  transform: translateY(-12px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.modal-merege .modal-content form .merege-input-group {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.modal-merege .modal-content form .merege-input-group.input_1 {
+  width: 20%;
+  padding-right: 12px;
+  padding-top: 24px;
+}
+.modal-merege .modal-content form .merege-input-group.input_2 {
+  width: 80%;
+  padding-top: 24px;
+}
+.modal-merege .modal-content form .merege-input-group.input_3 {
+  width: 25%;
+
+  padding-right: 12px;
+}
+.modal-merege .modal-content form .merege-input-group.input_4 {
+  width: 25%;
+}
+.modal-merege .modal-content form .merege-input-group label {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.modal-merege .modal-content form .merege-input-group input,
+.modal-merege .modal-content form .merege-input-group textarea {
+  user-select: none;
+  width: 100%;
+  padding: 12px;
+  background: #ffffff;
+  border: 0.5px solid #d6d7e3;
+  box-shadow: 2px 4px 16px rgba(184, 184, 184, 0.25),
+    0px 8px 50px rgba(219, 219, 219, 0.1);
+  border-radius: 6px;
+  outline: none;
+}
+
+.modal-merege .modal-content form .merege-input-group textarea {
+  height: 140px;
+}
+
+.modal-merege .modal-content form button {
+  width: 100%;
+  background: #6691e0;
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}

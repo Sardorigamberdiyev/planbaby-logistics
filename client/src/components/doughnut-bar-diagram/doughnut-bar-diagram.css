@@ -1,0 +1,235 @@
+.doughnut-bar-diagram {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.doughnut-bar-diagram .doughnut-container {
+  width: 44.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.doughnut-bar-diagram .doughnut-container .doughnut-body {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.doughnut-bar-diagram .doughnut-container .doughnut-wrapper {
+  height: 100%;
+  width: 55%;
+}
+.doughnut-bar-diagram .doughnut-container .doughnut-wrapper .doughnut-canvas {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doughnut-bar-diagram .doughnut-container .doughnut-wrapper .doughnut-header {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222325;
+}
+.doughnut-bar-diagram
+  .doughnut-container
+  .doughnut-wrapper
+  .doughnut-bar-diagram
+  .doughnut-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order {
+  height: 100%;
+}
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul {
+  margin: 0;
+  padding-right: 1rem;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li i {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+}
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li:hover {
+  cursor: pointer;
+}
+.doughnut-bar-diagram
+  .doughnut-body
+  .doughnut-quantity-by-order
+  ul
+  li:hover
+  i::after {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #f5f5f5 !important;
+}
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li p {
+  margin: 0 4px 0 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #222325;
+}
+
+.doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.doughnut-bar-diagram .bar-y-container {
+  width: 54.5%;
+  padding: 0.75rem 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+.doughnut-bar-diagram .bar-y-container .bar-y-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doughnut-bar-diagram .bar-y-container .bar-y-header canvas * {
+  font-size: 50px !important;
+}
+.doughnut-bar-diagram .bar-y-container .bar-y-header p {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.doughnut-bar-diagram .bar-y-container .bar-y-header button {
+  background-color: transparent;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #089df7;
+}
+
+.doughnut-bar-diagram .bar-y-container .bar-y-body {
+  width: 100%;
+  height: 380px;
+}
+.doughnut-bar-diagram .bar-y-container .bar-y-body canvas {
+  height: 100% !important;
+}
+@media screen and (max-width: 1200px) {
+  .doughnut-bar-diagram {
+    flex-direction: column;
+  }
+
+  .doughnut-bar-diagram .doughnut-container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .doughnut-bar-diagram .doughnut-container .doughnut-header {
+    font-size: 24px;
+  }
+
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li {
+    padding-left: 1.5rem;
+  }
+
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li i {
+    width: 18px;
+    height: 18px;
+  }
+
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li p,
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li span {
+    font-size: 24px;
+  }
+
+  .doughnut-bar-diagram .bar-y-container {
+    width: 100%;
+  }
+  .doughnut-bar-diagram .bar-y-container .bar-y-header p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li i {
+    width: 16px;
+    height: 16px;
+  }
+
+  .doughnut-bar-diagram .doughnut-container .doughnut-header,
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li p,
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li span,
+  .doughnut-bar-diagram .bar-y-container .bar-y-header p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .doughnut-bar-diagram .doughnut-body {
+    flex-direction: column;
+  }
+
+  .doughnut-bar-diagram .doughnut-container .doughnut-wrapper {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order {
+    width: 100%;
+  }
+
+  .doughnut-bar-diagram .doughnut-container .doughnut-header,
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li p,
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li span,
+  .doughnut-bar-diagram .bar-y-container .bar-y-header p {
+    font-size: 16px;
+  }
+
+  .doughnut-bar-diagram .doughnut-body .doughnut-quantity-by-order ul li i {
+    top: 3px;
+  }
+}

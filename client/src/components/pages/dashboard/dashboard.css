@@ -1,0 +1,350 @@
+.dashboard {
+  background-color: white;
+  padding: 3.5rem;
+}
+
+.dashboard .dashboard-container .dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .dashboard-container .start-end-date {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .dashboard-container .start-end-date h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #222325;
+}
+.dashboard .dashboard-container .start-end-date .dashboard-filter-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard .dashboard-container .start-end-date .select-wrapper {
+  position: relative;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-select {
+  width: 150px;
+  height: 40px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #475569;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper.is-dropdown
+  .day-month-select {
+  border-color: #6691e0;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-select
+  i {
+  width: 10px;
+  height: 10px;
+  transition-duration: 0.2s;
+  background-color: #818194;
+  opacity: 0.6;
+}
+
+.dashboard .dashboard-container .start-end-date .select-wrapper.is-dropdown i {
+  transform: rotate(180deg);
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-dropdown {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(3, 102, 214, 0.2) 0px 0px 0px 2px,
+    rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.2s;
+  z-index: 99999;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-dropdown
+  ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0.5rem 1.5rem;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-dropdown
+  ul
+  li {
+  padding: 0.25rem 0;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #475569;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-dropdown
+  ul
+  li.day-month-active {
+  color: #6691e0;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper
+  .day-month-dropdown
+  ul
+  li:hover {
+  color: #6691e0;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .select-wrapper.is-dropdown
+  .day-month-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dashboard .dashboard-container .start-end-date .picker-wrapper {
+  width: 260px;
+  padding: 0 1rem;
+}
+.dashboard .dashboard-container .start-end-date .picker-wrapper input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #475569;
+}
+
+.dashboard .dashboard-container .start-end-date .picker-wrapper .date-picker {
+  width: 200px;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .picker-wrapper
+  .date-picker:focus {
+  outline-width: 1px;
+  outline-color: #6691e0;
+}
+
+.dashboard
+  .dashboard-container
+  .start-end-date
+  .picker-wrapper
+  .date-picker::placeholder {
+  font-size: 14px;
+  color: #8a92a6;
+}
+
+.dashboard .dashboard-container .dashboard-wrapper .quantity-by-order {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard .dashboard-container .dashboard-wrapper .quantity-by-order ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.dashboard .dashboard-container .dashboard-wrapper .quantity-by-order ul li {
+  width: 30%;
+  margin-bottom: 1%;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .dashboard-container .dashboard-wrapper .quantity-by-order ul li p {
+  margin-bottom: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li
+  span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+/* .dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li.active-order {
+  background: linear-gradient(258.65deg, #8cb2f8 16.72%, #6691e0 83.28%);
+}
+
+.dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li.failure-order {
+  background: linear-gradient(275.23deg, #ed9f74 2.05%, #ff7a30 97.72%);
+}
+
+.dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li.success-order {
+  background: linear-gradient(228.38deg, #a0f1de -5.2%, #53edc8 93.72%);
+}
+
+.dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li.office-order {
+  background: linear-gradient(258.26deg, #cda1f0 17.3%, #ab67e1 82.79%);
+}
+
+.dashboard
+  .dashboard-container
+  .dashboard-wrapper
+  .quantity-by-order
+  ul
+  li.courier-order {
+  background: linear-gradient(258.65deg, #ec8f8f 16.72%, #e16767 83.28%);
+} */
+
+@media screen and (max-width: 992px) {
+  .dashboard .dashboard-container .dashboard-wrapper .quantity-by-order ul li {
+    width: 49%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dashboard .dashboard-container .start-end-date {
+    flex-direction: column;
+  }
+
+  .dashboard .dashboard-container .start-end-date h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dashboard {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .dashboard .dashboard-container .start-end-date h1 {
+    font-size: 24px;
+  }
+
+  .dashboard .dashboard-container .start-end-date .picker-wrapper {
+    width: 210px;
+    padding: 0;
+  }
+
+  .dashboard .dashboard-container .start-end-date .picker-wrapper .date-picker {
+    width: 180px;
+  }
+
+  .dashboard .dashboard-container .dashboard-wrapper .quantity-by-order ul li {
+    width: 100%;
+  }
+
+  .dashboard .dashboard-container .start-end-date .dashboard-filter-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard
+    .dashboard-container
+    .start-end-date
+    .dashboard-filter-wrapper
+    .select-wrapper {
+    margin-bottom: 1rem;
+  }
+}

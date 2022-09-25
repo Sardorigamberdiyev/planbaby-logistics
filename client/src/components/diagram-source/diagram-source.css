@@ -1,0 +1,77 @@
+.diagram-source {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.diagram-source .bar-x-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diagram-source .bar-x-header p,
+.diagram-source .bar-x-header span {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.diagram-source .bar-x-header .btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.diagram-source .bar-x-header .btn-wrapper button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  transition-duration: 0.2s;
+}
+
+.diagram-source .bar-x-header .btn-wrapper button.btn-active {
+  background-color: #3d416b;
+  color: white;
+}
+
+.diagram-source .bar-x-body {
+  height: 60vh;
+  margin-bottom: 1.25rem;
+}
+.diagram-source .bar-x-body canvas {
+  height: 100%;
+}
+.diagram-source .diagram-source-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram-source .diagram-source-list .diagram-source-list-item {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.diagram-source .diagram-source-list .diagram-source-list-item i {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 6px;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .diagram-source .bar-x-header {
+    flex-direction: column;
+  }
+
+  .diagram-source .bar-x-header p,
+  .diagram-source .bar-x-header span,
+  .diagram-source .bar-x-header .btn-wrapper {
+    margin-bottom: 0.5rem;
+  }
+}

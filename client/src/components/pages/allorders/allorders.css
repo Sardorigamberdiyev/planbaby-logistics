@@ -1,0 +1,142 @@
+.allorders .order-list {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.allorders .statistics {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  background-color: #fff;
+}
+
+.allorders .statistics .statistics-item {
+  position: relative;
+  width: 30%;
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6f8fe;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.allorders .statistics .statistics-item .top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+}
+
+.allorders .statistics .statistics-item .name,
+.allorders .statistics .statistics-item .count {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+
+.allorders .statistics .statistics-item .count {
+  font-weight: 400;
+  padding-left: 8px;
+}
+
+.allorders .filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+}
+
+.allorders .filter input {
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  color: #1d1d1d;
+  border: none;
+  box-shadow: 0 15px 50px 0 #a0a3bd1e;
+}
+.allorders .filter .exel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.allorders .filter .exel .react-datepicker-wrapper {
+  width: auto;
+}
+.allorders .filter .exel .react-datepicker__input-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.allorders .filter .exel button.btn-exel,
+.allorders .filter .exel button.btn-exel-product {
+  padding: 0.75rem 1.5rem;
+  border-color: transparent;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  float: right;
+  cursor: pointer;
+  color: white;
+  margin: 1rem;
+  width: 250px;
+}
+.allorders .filter .exel button.btn-exel {
+  background-color: #6691e0;
+}
+
+.allorders .filter .exel button.btn-exel-product {
+  background-color: #90ee90;
+}
+.allorders .filter .exel button:disabled {
+  opacity: 0.6;
+}
+.allorders .order-list .all-spinner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allorders .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .allorders .statistics .statistics-item {
+    width: 49%;
+  }
+
+  .allorders .filter .exel {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .allorders .statistics .statistics-item {
+    width: 100%;
+  }
+
+  .allorders .filter .exel {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+}

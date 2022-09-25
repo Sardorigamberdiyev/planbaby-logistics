@@ -1,0 +1,28 @@
+
+
+.order-list ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.order-list > ul {
+    display: flex;
+    flex-direction: column;
+}
+.order-list > ul > li{
+    margin-bottom: 1rem;
+}
+.order-filter .filter-order-list .active-item{
+    width: 32.5%;
+}
+@media screen and (max-width: 1200px) {   
+    .order-filter .filter-order-list .active-item{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 720px) {   
+    .order-filter .filter-order-list .active-item{
+        width: 100%;
+    }
+}

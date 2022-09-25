@@ -1,0 +1,35 @@
+
+.value-list ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.value-list ul li {
+    padding: .5rem;
+}
+
+.value-list ul li div {
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: #53EDC8;
+    color: white;
+    cursor: default;
+    font-size: 14px;
+    border-radius: .5rem;
+}
+
+.value-list ul li div span {
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
+.value-list ul li div:hover span {
+    visibility: visible;
+}

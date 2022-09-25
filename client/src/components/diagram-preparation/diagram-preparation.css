@@ -1,0 +1,182 @@
+
+.diagram-preparation {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.diagram-preparation .diagram-preparation-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.diagram-preparation .line-container {
+    width: 49.5%;
+    padding: .75rem;
+    position: relative;
+    border-radius: .5rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+.diagram-preparation .line-container.line-full-container {
+    width: 100%;
+}
+
+.diagram-preparation .line-container.line-container-hidden {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.diagram-preparation .line-container .line-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diagram-preparation .line-container .select-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diagram-preparation .line-container .select-container .select-wrapper {
+    width: 180px;
+    margin-left: .5rem;
+}
+
+.diagram-preparation .line-container .line-full-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #E2E8F0;
+    background-color: white;
+    transition-duration: .2s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 49.5%;
+    right: 10px
+}
+
+.diagram-preparation .line-container .line-full-btn i {
+    width: 1rem;
+    height: 1rem;
+    background-color: #475569;
+    transition-duration: .2s;
+}
+
+.diagram-preparation .line-container .line-full-btn.line-btn-active {
+    background-color: #3D416B;
+}
+
+.diagram-preparation .line-container .line-full-btn.line-btn-active i {
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.diagram-preparation .line-container:hover .line-full-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+.diagram-preparation .bar-container {
+    width: 49.5%;
+    padding: .75rem;
+    position: relative;
+    background-color: #F5F5F5;
+    border-radius: .5rem;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+.diagram-preparation .bar-container.bar-full-container {
+    width: 100%;
+}
+
+.diagram-preparation .bar-container.bar-container-hidden {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.diagram-preparation .bar-container .bar-full-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #E2E8F0;
+    background-color: white;
+    transition-duration: .2s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 49.5%;
+    left: 10px
+}
+
+.diagram-preparation .bar-container .bar-full-btn i {
+    width: 1rem;
+    height: 1rem;
+    background-color: #475569;
+    transition-duration: .2s;
+}
+
+.diagram-preparation .bar-container .bar-full-btn.bar-btn-active {
+    background-color: #3D416B;
+}
+
+.diagram-preparation .bar-container .bar-full-btn.bar-btn-active i {
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.diagram-preparation .bar-container:hover .bar-full-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .diagram-preparation .line-container .line-container-header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .diagram-preparation .diagram-preparation-wrapper {
+        flex-direction: column;
+    }
+
+    .diagram-preparation .diagram-preparation-wrapper .line-container,
+    .diagram-preparation .diagram-preparation-wrapper .bar-container {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .diagram-preparation .line-container .line-full-btn,
+    .diagram-preparation .bar-container .bar-full-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .diagram-preparation .line-container .select-container {
+        flex-direction: column;
+    }
+
+    .diagram-preparation .line-container .select-container .select-wrapper {
+        margin-bottom: .5rem;
+    }
+}

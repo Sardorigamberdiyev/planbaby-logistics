@@ -1,0 +1,8 @@
+{
+    "port": 5001,
+    "mongoUri": "mongodb://sardor:123456@localhost:27017,localhost:27018,localhost:27019/logistics?authSource=admin",
+    "jwtSecretKey": "devSecretKey",
+    "jwtSecretKeyRefresh": "devSecretKeyRefresh",
+    "tokenTgBot": "devTokenTgBot",
+    "tgChatId": "devTgChatId"
+}

@@ -1,0 +1,225 @@
+.confirm-tekshirilmagan .operator-list-items .operator-list-item .modalcheck{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 10px;
+    background-image: url('./../../../assets/icons/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item p span.uc {
+    text-transform: uppercase;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 2px 4px 16px rgba(217, 158, 226, 0.25), 0px 8px 50px rgba(160, 163, 189, 0.1);
+    border-radius: 4px;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal p{
+    padding: 0;
+    margin: 10px 8px; 
+    cursor: pointer;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal p i{
+    background-color: #D6D7E3;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal p a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal p:hover span{
+    color: #6691E0;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .operator-list-item .confirm-list-modal p:hover i{
+    background-color: #6691E0;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text{
+    font-weight: 600;
+}
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .not_delivered-orders-quantity::before,
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .failure_delivered-orders-quantity::before,
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .delivered-orders-quantity::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .not_delivered-orders-quantity::before{
+    background-color: #6691E0;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .failure_delivered-orders-quantity::before{
+    background-color: #FF7A30;
+}
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .delivered-orders-quantity::before{
+    background-color: #53EDC8;
+}
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .not_delivered-orders-quantity {
+    color: #6691E0;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .failure_delivered-orders-quantity {
+    color: #FF7A30;   
+}
+.my-orders .my-orders-wrapper .user-orders-filter .confirm-filter-header .orders-quantity-info .input-text .delivered-orders-quantity {
+    color: #53EDC8;   
+}
+.user-orders-filter .kuryer-filter-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.user-orders-filter .kuryer-filter-icons div{
+    background-color: #F6F8FE;
+    padding: 8px 10px;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.user-orders-filter .kuryer-filter-icons .filter-icons{
+    background-color: #200E32;
+    width: 20px;
+    height: 20px;
+    
+}
+.user-orders-filter .kuryer-filter-icons div:hover .filter-icons {
+    background-color: #6691E0;
+}
+.user-orders-filter .kuryer-pul-items, 
+.user-orders-filter .kuryer-pul-items a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-orders-filter .kuryer-pul-items{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-orders-filter .kuryer-pul-items a{
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 600;
+    background-color:#FAFAFE;
+    width: 300px;
+    height: 64px;
+    padding: 1rem 1.5rem;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.user-orders-filter .kuryer-pul-items a p{
+    margin: 0;
+    padding: 0; 
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    display: flex;
+}
+.user-orders-filter .kuryer-pul-items a .kuryer-nuqt{
+    color: #6691E0;
+}
+.user-orders-filter .kuryer-pul-items a .kuryer-karta{
+    color: #53EDC8;
+}
+.user-orders-filter .kuryer-pul-items a .kuryer-qarz{
+    color: #FF7A30;
+}
+
+
+.comfirm-filter-list .confirm-tekshirilmagan .operator-list-items .not_delivered::before,
+.user-data .buyurtmalar  .not_delivered::before{
+    background-color: #6691e0;
+}
+.comfirm-filter-list .confirm-tekshirilmagan .operator-list-items .delivered::before,
+.user-data .buyurtmalar  .delivered::before{
+    background-color: #53EDC8;
+}
+.comfirm-filter-list .confirm-tekshirilmagan .operator-list-items .failure_delivered::before,
+.user-data .buyurtmalar .failure_delivered::before{
+    background-color: #ff7a30;
+}
+.inpout-footer-wraper-button{
+    background: #6691E0;
+    border-radius: 8px;   
+    color: #fff;
+    padding: 16px 20px;
+    border: none;
+}
+.modal-tugatish{    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.input-value-group .input-value-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.input-value-group .input-value-wrap span{
+    color: #1D1D1D;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.input-value-item-tugatish input::placeholder{
+    color: #D6D7E3;
+}
+.input-value-group .inpout-value-wrapper span{
+    text-transform: capitalize;
+}
+.input-value-item-tugatish input{
+    background: #F6F8FE;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D1D1D;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

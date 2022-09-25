@@ -1,0 +1,211 @@
+
+.modal-active-order {
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-active-order .modal-content {
+    width: 40rem;
+    max-height: 80%;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
+.modal-active-order .modal-content::-webkit-scrollbar {
+    width: 4px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.modal-active-order .modal-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.modal-active-order .modal-content::-webkit-scrollbar-thumb {
+    background-color: #1D1D1D;
+    border-radius: .5rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper {
+    position: relative;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .close-modal {
+    font-size: 2.5rem;
+    color: #D72525;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: -3%;
+    right: 0;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper h2 {
+    text-align: center;
+    color: #1D1D1D;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-group.unset-jc {
+    justify-content: flex-start;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-group.unset-jc .input-value-wrapper {
+    margin-right: 1.5rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper.default {
+    width: 240px;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper.source {
+    width: 185px;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper span {
+    color: #1D1D1D;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper i {
+    background-color: #1D1D1D;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper div {
+    padding: 1rem 1.5rem;
+    color: #D6D7E3;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-value-wrapper .payment {
+    padding: .75rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .textarea-value-wrapper {
+    margin-bottom: 2rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .textarea-value-wrapper span {
+    color: #1D1D1D;
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .textarea-value-wrapper div {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .textarea-value-wrapper div p {
+    color: #D6D7E3;
+    margin: 0;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-multi-value-wrapper {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-multi-value-wrapper span {
+    color: #1D1D1D;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-multi-value ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-multi-value ul li {
+    padding: 1rem 1.5rem;
+    margin-bottom: .5rem;
+    color: white;
+    background-color: #53EDC8;
+    border-radius: .5rem;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p{
+    background-color: #F6F8FE;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p:hover{
+    background-color: #6691E0;
+}
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p:hover i{
+    background-color: #fff;
+}
+
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p:hover span{
+    color: #fff
+}
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-active-order .modal-content .modal-content-wrapper .order-view .input-footer-wrapper p i{
+    background-color: #1d1d1d;
+    margin-right: 8px;
+}

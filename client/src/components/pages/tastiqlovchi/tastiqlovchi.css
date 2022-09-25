@@ -1,0 +1,238 @@
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan{
+   
+    position: relative;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-term-code {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-term-code input {
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    color: #1D1D1D;
+    border: 2px solid #F6F8FE;
+    box-shadow: 0 15px 50px 0 #a0a3bd1e;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-term-code input:focus {
+    outline-color: #6691E0;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-header,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan .confirm-list-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #F6F8FE;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+    margin-left: 2rem;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-header h4,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan .confirm-list-header h4{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan .confirm-list-header h4 span,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan .confirm-list-header h4 span{
+    opacity: 0.6;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-items,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-items{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item{
+    margin: 20px 0;
+    background-color:#FAFAFE;
+    border-radius: 8px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item p span.uc,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item p span.uc {
+    text-transform: uppercase;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .icons{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 10px;
+    background-image: url('./../../../assets/icons/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item::before,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 8px 8px 0 0;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal{
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 2px 4px 16px rgba(217, 158, 226, 0.25), 0px 8px 50px rgba(160, 163, 189, 0.1);
+    border-radius: 4px;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal p{
+    
+    padding: 0;
+    margin: 10px 8px; 
+    cursor: pointer;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal p i{
+    background-color: #D6D7E3;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal p a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal p:hover span{
+    color: #6691E0;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item .confirm-list-modal p:hover i{
+    background-color: #6691E0;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item::before{
+    background-color: #FF7A30;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item::before{
+    background-color: #6691E0;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item.failure::before {
+    background-color: #FF7A30;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item.at-courier::before {
+    background-color: #FB66B8;
+}
+
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item h5,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item h5{
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 24px;
+    color: #1D1D1D;
+    padding: 0 10px;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item p,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item p{
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(29,29,29, 0.6);
+    padding: 0 10px;
+}
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilmagan  .confirm-list-item p span,
+.user-orders-filter .comfirm-filter-list .confirm-tekshirilgan  .confirm-list-item p span{
+    color: #1D1D1D;
+    opacity: 1;
+    padding: 10px 0;
+}
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button {
+    width: 32%;
+    padding: 1rem;
+    text-align: center;
+    transition-duration: .25s;
+    font-size: 24px;
+    background-color: #6691E0;
+    border-radius: .5rem;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button:active {
+    background-color: #3669c9;
+}
+
+.my-orders .my-orders-wrapper .user-orders-filter .btn-still-wrapper button.btn-still-disable {
+    opacity: .5;
+    cursor: default;
+}
+
+ .user-data .buyurtmalar > div{
+    margin: 24px 0px;
+    background-color:#FAFAFE;
+    border-radius: 8px;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.user-data .buyurtmalar div p{
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 24px;
+    color: #5D5D7E;
+}
+
+.user-data .buyurtmalar div p span{
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+.user-data .buyurtmalar div h5,
+.user-data .buyurtmalar div p{
+    padding: 0 20px;
+}
+
+.user-data .buyurtmalar div span,
+.user-data .buyurtmalar div h5 {
+    font-weight: 600;
+}
+
+.user-data .buyurtmalar div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.user-data .buyurtmalar .fbuyurtma::before{
+    background-color: #6691E0
+}
+
+.user-data .buyurtmalar .rbuyurtma::before{
+    background-color: #FF7A30
+}
+
+.user-data .buyurtmalar .tbuyurtma::before{
+    background-color: #53EDC8
+} 

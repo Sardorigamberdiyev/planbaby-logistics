@@ -1,0 +1,130 @@
+
+.product {
+    padding: 2rem;
+}
+
+.product .product-wrapper {
+    padding: 2.5rem;
+    box-shadow: 2px 4px 16px 0 #d99ee241;
+    background-color: white;
+}
+.product .product-wrapper .error-msg {
+    color: #D72525;
+    font-size: 14px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+}
+
+.product .product-wrapper h1 {
+    color: #1D1D1D;
+    margin-top: 0;
+}
+
+.product .product-wrapper .form-wrapper {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.product .product-wrapper .input-custom-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .product-wrapper .input-custom {
+    margin-right: 1.5em;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product .product-wrapper .input-custom label {
+    color: #9F4FDE;
+    margin-bottom: .5rem;
+}
+
+.product .product-wrapper .input-custom label.input-focused {
+    color: #1D1D1D;
+}
+
+.product .product-wrapper .input-custom input {
+    padding: 1rem 1.5rem;
+    color: #1D1D1D;
+    transition-duration: .25s;
+    background-color: #F6F8FE;
+    border: .5px solid transparent;
+    border-radius: .5rem;
+}
+
+.product .product-wrapper .input-custom input::placeholder {
+    color: #9F4FDE;
+}
+
+.product .product-wrapper .input-custom input:focus {
+    outline-style: none;
+    border-color: #6691E0;
+}
+
+.product .product-wrapper .input-custom input.error-input {
+    border: 1px solid #D72525;
+}
+
+.product .product-wrapper .btn-handler {
+    width: 256px;
+    margin-left: auto;
+    padding: 1rem 0;
+    display: block;
+    color: white;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: #6691E0;
+    border: none;
+    transition-duration: .2s;
+    font-size: 14px;
+}
+
+.product .product-wrapper .btn-handler:active {
+    background-color: #3669c9;
+}
+
+.product .product-wrapper .product-list-wrapper {
+    padding-top: 2.5rem;
+    border-top: 1px solid #a9a9a91f;
+}
+
+.product .product-wrapper .product-list-wrapper .product-list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+    .product .product-wrapper .input-custom {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .product .product-wrapper .btn-handler {
+        margin: 0 auto;
+    }
+
+    .product .product-wrapper .product-list-wrapper .product-list {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        padding: 0.8rem;
+    }
+
+    .product .product-wrapper {
+        padding: 0.8rem;
+    }
+}

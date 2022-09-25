@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  background-color: #fafafe;
+  margin: 0;
+  font-family: roboto, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fb66b8;
+  border-radius: 0.5rem;
+}
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.app .app-wrapper .main-container {
+  display: flex;
+}
+
+.app .app-wrapper .main-container .menu-container {
+  width: 15%;
+  transition-duration: 0.4s;
+}
+
+.app .app-wrapper .main-container .route-container {
+  overflow: hidden;
+  width: 85%;
+  transition-duration: 0.4s;
+}
+
+.app .app-wrapper .main-container .menu-container.not-menu {
+  margin-left: -15%;
+}
+
+.app .app-wrapper .main-container .route-container.not-menu {
+  width: 100%;
+}
+
+@media screen and (max-width: 1680px) {
+  .app .app-wrapper .main-container .menu-container {
+    width: 20%;
+  }
+
+  .app .app-wrapper .main-container .route-container {
+    width: 80%;
+    min-height: 100vh;
+  }
+
+  .app .app-wrapper .main-container .menu-container.not-menu {
+    margin-left: -20%;
+  }
+
+  .app .app-wrapper .main-container .route-container.not-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .app .app-wrapper .main-container .menu-container {
+    width: 25%;
+  }
+
+  .app .app-wrapper .main-container .route-container {
+    width: 75%;
+  }
+
+  .app .app-wrapper .main-container .menu-container.not-menu {
+    margin-left: -25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app .app-wrapper .main-container {
+    overflow: hidden;
+  }
+
+  .app .app-wrapper .main-container .menu-container {
+    width: 30%;
+    margin-left: -30%;
+    border-right: 1px solid lightgrey;
+  }
+
+  .app .app-wrapper .main-container .route-container {
+    width: 100%;
+  }
+
+  .app .app-wrapper .main-container .route-container.show-menu {
+    width: 100%;
+    margin-right: -40%;
+  }
+
+  .app .app-wrapper .main-container .menu-container.show-menu {
+    margin-left: 0 !important;
+  }
+
+  .app .app-wrapper .main-container .menu-container.not-menu {
+    margin-left: -30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app .app-wrapper .main-container .menu-container {
+    width: 55%;
+    margin-left: -55%;
+  }
+
+  .app .app-wrapper .main-container .route-container.show-menu {
+    width: 100%;
+    margin-right: -70%;
+  }
+
+  .app .app-wrapper .main-container .menu-container.not-menu {
+    margin-left: -55%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app .app-wrapper .main-container .menu-container {
+    width: 90%;
+    margin-left: -90%;
+  }
+
+  .app .app-wrapper .main-container .route-container.show-menu {
+    margin-right: -110%;
+  }
+
+  .app .app-wrapper .main-container .menu-container.not-menu {
+    margin-left: -90%;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
+.icon.icon-menu {
+  mask-image: url("./../../assets/icons/menu.png");
+}
+.icon.icon-filter {
+  mask-image: url("./../../assets/icons/filter.png");
+}
+.icon.icon-kuryer {
+  mask-image: url("./../../assets/icons/kuryer.png");
+}
+.icon.icon-delete {
+  mask-image: url("./../../assets/icons/bin.png");
+}
+.icon .icon-left {
+  mask-image: url("./../../assets/menu-icons/iconleft.png");
+}
+.icon.icon-dashboard {
+  mask-image: url("./../../assets/menu-icons/dashboard.png");
+}
+.icon.icon-menustyle {
+  mask-image: url("../../assets/menu-icons/style-icons.png");
+}
+.icon.icon-order {
+  mask-image: url("../../assets/icons/user.png");
+}
+
+.icon.icon-administration {
+  mask-image: url("../../assets/icons/pc-administrator.png");
+}
+
+.icon.icon-setting {
+  mask-image: url("../../assets/icons/settings.png");
+}
+
+.icon.icon-logout {
+  mask-image: url("../../assets/icons/logout.png");
+}
+
+.icon.icon-search {
+  mask-image: url("../../assets/icons/search.png");
+}
+
+.icon.icon-cash {
+  mask-image: url("../../assets/icons/wallet-filled-money-tool.png");
+}
+
+.icon.icon-card {
+  mask-image: url("../../assets/icons/wallet.png");
+}
+
+.icon.icon-arrow-up {
+  mask-image: url("../../assets/icons/arrow-up.png");
+}
+.icon.icon-arrow {
+  mask-image: url("../../assets/icons/arrow-down-sign-to-navigate.png");
+}
+
+.icon.icon-pencil {
+  mask-image: url("../../assets/icons/pencil.png");
+}
+
+.icon.icon-arrow-right {
+  mask-image: url("../../assets/icons/right-arrow.png");
+}
+
+.icon.icon-arrow-left {
+  mask-image: url("../../assets/icons/left-arrow.png");
+}
+.icon.icon-filter {
+  mask-image: url("./../../assets/icons/filter.png");
+}
+
+.icon.icon-printer {
+  mask-image: url("../../assets/icons/printer.png");
+}
+
+.icon.icon-check {
+  mask-image: url("../../assets/icons/check.png");
+}
+
+.icon.icon-done {
+  mask-image: url("../../assets/icons/done.png");
+}
+
+.icon.icon-uzbakistan {
+  background-image: url("../../assets/icons/uzbekistan.png");
+}
+
+.icon.icon-kyrgyzstan {
+  background-image: url("../../assets/icons/kyrgyzstan.png");
+}
+
+.icon.icon-kazakhstan {
+  background-image: url("../../assets/icons/kazakhstan.png");
+}
+
+.icon.icon-russia {
+  background-image: url("../../assets/icons/russia.png");
+}
+
+.icon.icon-tajikistan {
+  background-image: url("../../assets/icons/tajikistan.png");
+}
+
+.icon.icon-turmenistan {
+  background-image: url("../../assets/icons/turkmenistan.png");
+}
+
+.icon.icon-usa {
+  background-image: url("../../assets/icons/united-states.png");
+}
+
+.icon.icon-telegram {
+  mask-image: url("../../assets/icons/telegram.png");
+}
+
+.icon.icon-view {
+  mask-image: url("../../assets/icons/view.png");
+}
+
+.icon.icon-invisible {
+  mask-image: url("../../assets/icons/invisible.png");
+}
+
+.icon.icon-failure {
+  mask-image: url("../../assets/icons/delivery-cancelled.png");
+}
+
+.icon.icon-dashboard-2 {
+  background-image: url("../../assets/icons/dashboard.png");
+}

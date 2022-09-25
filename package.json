@@ -1,0 +1,47 @@
+{
+  "name": "pb-logistics",
+  "version": "1.0.0",
+  "description": "Plan baby logistics",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "deploy-b-pbaby": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r src .env index.js package.json root@65.108.241.209:/root/apps/main-pb-logistics-backend-main",
+    "deploy-b-vortex": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r src .env index.js package.json root@65.108.241.209:/root/apps/vortex-pbaby",
+    "deploy-b-eropen": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r src .env index.js package.json root@65.108.241.209:/root/apps/eropen-pbaby",
+    "deploy-b-pertin": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r src .env index.js package.json root@65.108.241.209:/root/apps/pertin-pbaby",
+    "deploy-f-pbaby": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r client/build root@65.108.241.209:/root/apps/main-pb-logistics-backend-main/client",
+    "deploy-f-vortex": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r client/build root@65.108.241.209:/root/apps/vortex-pbaby/client",
+    "deploy-f-eropen": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r client/build root@65.108.241.209:/root/apps/eropen-pbaby/client",
+    "deploy-f-pertin": "scp -i \"C:/Users/pc/.ssh/hetznerkey\" -r client/build root@65.108.241.209:/root/apps/pertin-pbaby/client",
+    "pm2-restart-hetzner": "ssh -i \"C:/Users/pc/.ssh/hetznerkey\" root@65.108.241.209:/root pm2 restart pbaby.uz eropen-pbaby.uz-3011 pertin-pbaby.uz-3013 vortex-pbaby.uz-3012",
+    "deploy-frontend-hetzner": "npm run deploy-f-pbaby && npm run deploy-f-vortex && npm run deploy-f-eropen && npm run deploy-f-pertin",
+    "deploy-backend-hetzner": "npm run deploy-b-pbaby && npm run deploy-b-vortex && npm run deploy-b-eropen && npm run deploy-b-pertin",
+    "deploy-hetzner": "npm run deploy-b-pbaby && npm run deploy-b-vortex && npm run deploy-b-eropen && npm run deploy-b-pertin && npm run deploy-f-pbaby && npm run deploy-f-vortex && npm run deploy-f-eropen && npm run deploy-f-pertin"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "reactjs",
+    "mongodb",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5",
+    "run-rs": "^0.7.5",
+    "xlsx": "^0.17.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}

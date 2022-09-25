@@ -1,0 +1,171 @@
+.operator-filter-container-manager{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.operator-filter-container-manager .filter-modal {
+    top: 5rem;
+}
+
+.operator-filter-container-manager .manager-button-group{
+    flex-grow: 16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    border: 0.5rem;
+}
+.operator-filter-container-manager .manager-button-group button{
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    width: 50%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1D1D1D;
+}
+.operator-filter-container-manager .manager-button-group .manager-button-active{
+    background: #6691E0;
+    color: #fff;
+}
+
+.operator-filter-container-manager .manager-button-group .manager-button{
+    background: #F6F8FE;
+}
+.operator-filter-container-manager .manager-button-group button:first-child{
+    border-radius: 0.5rem 0 0 0.5rem;      
+}
+.operator-filter-container-manager .manager-button-group button:last-child{
+    border-radius: 0 0.5rem 0.5rem 0;      
+}
+.operator-filter-container-manager .kuryer-filter-icons{
+    flex-grow: 1;
+}
+.manager-list-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.manager-list-header .manager-list-header-button{
+    border: none;
+    width: 367px;
+    height: 64px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 32px;
+    color: #8A92A6;
+    background-color: #fff;
+}
+.manager-list-header .manager-list-header-button:hover{
+    background: #6691E0;
+    color: #FFFFFF;
+}
+
+.manager-items-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   margin-left: 2rem;
+}
+
+/* .manager-items-list .user-list-item {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition-duration: .2s;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+    min-width: 100%;
+}
+
+.manager-items-list .user-list-item:hover {
+    background-color: #53EDC8;
+}
+.manager-items-list .user-list-item:hover a {
+    color: #fff;
+}
+.manager-items-list .user-list-item.active {
+    background-color: #53EDC8;
+}
+
+.manager-items-list .user-list-item .user-index {
+    color: #1D1D1D;
+    margin-right: 1.5rem;
+}
+
+.manager-items-list .user-list-item.active .user-index,
+.manager-items-list .user-list-item:hover .user-index {
+    color: white;
+}
+
+.manager-items-list .user-list-item .user-info {
+    width: 100%;
+    transition-duration: .2s;
+    display: flex;
+    justify-content: space-around;
+}
+
+.manager-items-list .user-list-item .user-info .span {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+.manager-items-list .user-list-item .user-info .span:last-child {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+.manager-items-list .user-list-item.active .user-info .span,
+.manager-items-list .user-list-item:hover .user-info .span {
+    color: white;
+} */
+
+.registration .registration-wrapper .error-msg {
+    color: #D72525;
+    font-size: 14px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+}
+
+/* .manager-items-list .user-list-item a {
+    margin-left: 1.5rem;
+}
+
+.manager-items-list .user-list-item a i {
+    width: 20px;
+    height: 20px;
+    background-color: #1D1D1D;
+    visibility: hidden;
+}
+
+.manager-items-list .user-list-item.active a i,
+.manager-items-list .user-list-item:hover a i {
+    background-color: white;
+    visibility: visible;
+} */
+
+@media screen and (max-width: 768px){
+    .manager-items-list,
+    .operator-filter-container-manager .manager-button-group{
+    margin-left: 0;
+}
+}

@@ -1,0 +1,112 @@
+.user-list-item {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition-duration: .2s;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+/* .user-list-item .user-link .user-info-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.user-list-item:hover {
+    background-color: #53EDC8;
+}
+
+.user-list-item:hover a {
+    color: #fff;
+}
+
+.user-list-item.active {
+    background-color: #53EDC8;
+}
+
+.user-list-item .user-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1D1D1D;
+    text-decoration: none;
+    width: 100%;
+}
+
+.user-list-item .user-index {
+    color: #1D1D1D;
+    margin-right: 1.5rem;
+}
+
+.user-list-item.active .user-index,
+.user-list-item:hover .user-index {
+    color: white;
+}
+
+.user-list-item .user-info {
+    width: 100%;
+    transition-duration: .2s;
+
+}
+
+.user-list-item .user-info .span {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+
+.user-list-item .user-info .span:last-child {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+
+.user-list-item .oprator-link .user-info-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-list-item.active .user-info .span,
+.user-list-item:hover .user-info .span {
+    color: white;
+}
+
+.user-list-item .manager-item-delete{
+    border: none;
+    color: #D72525;
+    background-color: #F6F8FE;
+    margin-left: 1rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+.user-list-item .manager-item-delete:hover{
+    background-color: #fff;
+}
+
+.user-list-item a {
+    margin-left: 1.5rem;
+}
+
+.user-list-item a i {
+    width: 20px;
+    height: 20px;
+    background-color: #1D1D1D;
+    visibility: hidden;
+}
+
+.user-list-item.active a i,
+.user-list-item:hover a i {
+    background-color: white;
+    visibility: visible;
+}

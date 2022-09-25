@@ -1,0 +1,80 @@
+.data-modal ul.data-history li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding-right: 2rem !important;
+}
+.data-modal ul.data-history li .date {
+  margin-left: 1rem;
+}
+.data-modal ul.data-history li .all-data {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0 7px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.data-modal ul.data-history li .fulldata {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  height: 0;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  background-color: #fff;
+  transition: 0.2s;
+  color: #1d1d1d;
+  z-index: 5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.data-modal ul.data-history li:last-child .fulldata {
+  position: absolute;
+  top: -124px;
+  right: 30px;
+}
+.data-modal ul.data-history li .fulldata.active {
+  min-height: 180px;
+  width: auto;
+  overflow-y: scroll;
+  padding: 1rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.data-modal ul.data-history li .fulldata .date {
+  margin: 0.5rem 0;
+}
+
+.data-modal ul.data-history li .fulldata .fullname,
+.data-modal ul.data-history li .fulldata .date,
+.data-modal ul.data-history li .fulldata .new,
+.data-modal ul.data-history li .fulldata .old {
+  background-color: #53edc8;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.data-modal ul.data-history li .fulldata .name {
+  margin-bottom: 0.5rem;
+  padding: 0 5px;
+}
+.data-modal ul.data-history li .fulldata .next {
+  text-align: center;
+  transform: rotate(90deg);
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}

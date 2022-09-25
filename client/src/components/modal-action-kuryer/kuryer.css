@@ -1,0 +1,139 @@
+.modal-kuryer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    position: relative;
+}
+.modal-kuryer-header h4{
+    text-align: center;
+    width: 95%;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1D1D1D;
+}
+.modal-kuryer-header span{
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 40px;
+    color: #D72525;
+    cursor: pointer;
+}
+.modalkuryer-selector,
+.modalkuryer-item{
+    margin: 10px 0;
+    position: relative;
+}
+.modalkuryer-selector p,
+.modalkuryer-item p{
+    padding: 0;
+    margin: 0;
+    color: #1D1D1D;
+    margin-bottom: 2px;
+}
+.modalkuryer-selector p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.modalkuryer-item p{
+    color: #D6D7E3
+}
+.modalkuryer-selector  .modalkuryer-input{
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    background: #F6F8FE;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.modalkuryer-selector  .modalkuryer-input input,
+.modalkuryer-selector  .modalkuryer-input input:checked{
+    width: 90%;
+    display: inline-block;
+    text-align: start;
+    cursor: text;
+    padding: 2px 5px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: transparent;
+    background-color: transparent;
+}
+.modalkuryer-selector  .modalkuryer-input .icon-arrow{
+    background-color: #1D1D1D;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.modalkuryer-selector ul{
+    background-color: #fff;
+    padding: 10px 30px;
+    position: absolute;
+    z-index: 100;
+    
+}
+.modalkuryer-selector ul.modalkuryer-item-active{
+    display: block;
+}
+.modalkuryer-selector ul.modalkuryer-item{
+    display: none;
+}
+.modal-kuryer-row .modalkuryer-item div{
+    padding: 10px 20px;
+    background: #F6F8FE;
+    border-radius: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D6D7E3;
+}
+.modal-kuryer-row .col-lg-3{
+    padding: 10px;
+}
+.modal-active-order .modal-content{
+    width: 600px;
+}
+.modal-kuryer-row .modalkuryer-name{
+    margin-top: 20px;
+}
+.modal-kuryer-row .modalkuryer-name p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1D1D1D;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.modal-kuryer-row .modalkuryer-name h4{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #D6D7E3;
+}
+.modal-kuryer-row .modalkuryer-button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-kuryer-row .modalkuryer-button button{
+        width: 100%;
+    background: #6691E0;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+}

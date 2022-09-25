@@ -1,0 +1,285 @@
+
+.registration {
+    padding: 2rem;
+}
+
+.registration .registration-wrapper {
+    padding: 3.5rem;
+    background-color: white;
+    box-shadow: 2px 4px 16px 0 #d99ee241;
+    border-radius: .5rem;
+}
+.registration .registration-wrapper h1 {
+    color: #1D1D1D;
+    margin-top: 0;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+
+color: #1D1D1D;
+}
+
+.registration .registration-wrapper .form-wrapper {
+    padding-bottom: 7rem;
+}
+
+.registration .registration-wrapper .form-wrapper .placing-left {
+    width: 50%;
+}
+
+.registration .registration-wrapper .form-wrapper .placing-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {   
+    .registration .registration-wrapper .form-wrapper .placing-left {
+           width: 100%;
+   }
+}
+.registration .registration-wrapper .user-list-wrapper {
+    padding-top: 2.5rem;
+    border-top: 1px solid #a9a9a91f;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list-header {
+    width: 100%;
+    font-size: 24px;
+    color: #1D1D1D;
+    background-color: #F6F8FE;
+    text-align: center;
+    padding: .75rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition-duration: .2s;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item:hover {
+    background-color: #53EDC8;
+}
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item:hover a {
+    color: #fff;
+}
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item.active {
+    background-color: #53EDC8;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item .user-index {
+    color: #1D1D1D;
+    margin-right: 1.5rem;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item.active .user-index,
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item:hover .user-index {
+    color: white;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item .user-info {
+    width: 100%;
+    transition-duration: .2s;
+
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item .user-info .span {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item .user-info .span:last-child {
+    color: #1D1D1D;
+    padding: 5px 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
+}
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item.active .user-info .span,
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item:hover .user-info .span {
+    color: white;
+}
+
+.registration .registration-wrapper .error-msg {
+    color: #D72525;
+    font-size: 14px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item a {
+    margin-left: 1.5rem;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item a i {
+    width: 20px;
+    height: 20px;
+    background-color: #1D1D1D;
+    visibility: hidden;
+}
+
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item.active a i,
+.registration .registration-wrapper .user-list-wrapper .user-list .user-list-item:hover a i {
+    background-color: white;
+    visibility: visible;
+}
+
+.registration .registration-wrapper .input-custom-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration .registration-wrapper .input-custom {
+    width: 48%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.registration .registration-wrapper .input-custom.w-100 {
+    width: 100%;
+}
+
+.registration .registration-wrapper .input-custom label {
+    color: #9F4FDE;
+    margin-bottom: .5rem;
+}
+
+.registration .registration-wrapper .input-custom label.input-focused {
+    color: #1D1D1D;
+}
+
+.registration .registration-wrapper .input-custom > input {
+    height: 56px;
+    padding: 1rem 1.5rem;
+    color: #1D1D1D;
+    transition-duration: .2s;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border: .5px solid transparent;
+    border-radius: .5rem;
+}
+
+.registration .registration-wrapper .input-custom > input:focus {
+    outline-style: none;
+    border-color: #6691E0;
+}
+
+.registration .registration-wrapper .input-custom > input::placeholder {
+    color: #9F4FDE;
+}
+
+.registration .registration-wrapper .input-custom > input.error-input {
+    border: 1px solid #D72525;
+}
+
+.registration .registration-wrapper .input-custom .password-wrapper {
+    height: 56px;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    background-color: #F6F8FE;
+    border-radius: .5rem;
+    border: .5px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration .registration-wrapper .input-custom .password-wrapper input {
+    width: 80%;
+    height: 100%;
+    color: #1D1D1D;
+    transition-duration: .2s;
+    outline-style: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+}
+
+.registration .registration-wrapper .input-custom .password-wrapper input::placeholder {
+    color: #9F4FDE;
+}
+
+.registration .registration-wrapper .input-custom .password-wrapper .icon-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+}
+
+.registration .registration-wrapper .input-custom .password-wrapper .icon-wrapper i {
+    background-color: #D6D7E3;
+    cursor: pointer;
+}
+
+.registration .registration-wrapper .btn-handler {
+    width: 300px;
+    margin-left: auto;
+    display: block;
+    padding: 1rem 0;
+    color: white;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: #6691E0;
+    border: none;
+    transition-duration: .25s;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.registration .registration-wrapper .btn-handler:active {
+    background-color: #3669c9;
+}
+
+@media screen and (max-width: 768px) {
+    .registration {
+        padding: 0.8rem;
+    }
+
+    .registration .registration-wrapper {
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 2px 4px 16px 0 #d99ee241;
+        border-radius: .5rem;
+    }   
+}
+/* 
+@media (min-width: 577px) and (max-width: 768px) {
+    .registration {
+        padding: 0.8rem;
+    }
+
+    .registration .registration-wrapper {
+        wi
+    }
+} */

@@ -1,0 +1,589 @@
+.clearance-goods {
+  padding: 2rem;
+}
+
+.clearance-goods .clearance-wrapper {
+  padding: 3.5rem;
+  background-color: white;
+  box-shadow: 0 15px 50px 0 #a0a3bd23;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.clearance-goods .clearance-wrapper .tasks {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  max-height: 636px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.clearance-goods .clearance-wrapper .tasks::-webkit-scrollbar {
+  width: 0.1rem;
+}
+.clearance-goods .clearance-wrapper .tasks::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.clearance-goods .clearance-wrapper .tasks::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.clearance-goods .clearance-wrapper .tasks .task {
+  width: 315px;
+  background: #ffffff;
+  box-shadow: 2px 4px 16px rgba(184, 184, 184, 0.25),
+    0px 8px 50px rgba(219, 219, 219, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.clearance-goods .clearance-wrapper .tasks .task .task_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clearance-goods .clearance-wrapper .tasks .task .task_header h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #404040;
+}
+.clearance-goods .clearance-wrapper .tasks .task .task_header h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6691e0;
+}
+
+.clearance-goods .clearance-wrapper .tasks .task .task_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+  padding: 0.5rem 0;
+}
+
+.clearance-goods .clearance-wrapper .tasks .task .task_name span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6691e0;
+}
+.clearance-goods .clearance-wrapper .tasks .task .desciption {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.5rem 0;
+  color: #d6d7e3;
+}
+
+.clearance-goods .clearance-wrapper .tasks .task .date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearance-goods .clearance-wrapper .tasks .task .date div {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d6d7e3;
+}
+.clearance-goods .clearance-wrapper .error-msg {
+  color: #d72525;
+  font-size: 14px;
+  position: absolute;
+  top: 101%;
+  left: 1rem;
+}
+
+.clearance-goods .clearance-wrapper .title-component {
+  color: white;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.clearance-goods .clearance-wrapper .input-custom-group,
+.clearance-goods .clearance-wrapper .radio-custom-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clearance-goods .clearance-wrapper .input-custom-group .css-17vrxmr-container,
+.clearance-goods .clearance-wrapper .input-custom-group .css-5zj15b-container {
+  width: 300px;
+}
+.clearance-goods .clearance-wrapper .input-custom-group.unset-align {
+  align-items: unset;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.clearance-goods .clearance-wrapper .input-custom {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.clearance-goods .clearance-wrapper .input-custom label {
+  color: #9f4fde;
+  margin-bottom: 0.5rem;
+}
+
+.clearance-goods .clearance-wrapper .input-custom label.input-focused {
+  color: #1d1d1d;
+}
+
+.clearance-goods .clearance-wrapper .input-custom input,
+.clearance-goods .clearance-wrapper .input-custom textarea {
+  padding: 1rem 1.5rem;
+  color: #1d1d1d;
+  transition-duration: 0.2s;
+  background-color: #f6f8fe;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+.clearance-goods
+  .clearance-wrapper
+  .input-custom
+  input.number-btn-none::-webkit-outer-spin-button,
+.clearance-goods
+  .clearance-wrapper
+  .input-custom
+  input.number-btn-none::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.clearance-goods .clearance-wrapper .input-custom > input {
+  width: 300px;
+}
+
+.clearance-goods .clearance-wrapper .input-custom > textarea {
+  min-width: 56%;
+  max-width: 56%;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+.clearance-goods .clearance-wrapper .input-custom > input.error-input {
+  border: 1px solid #d72525;
+}
+
+.clearance-goods .clearance-wrapper .input-custom input::placeholder,
+.clearance-goods .clearance-wrapper .input-custom textarea::placeholder {
+  color: #9f4fde;
+}
+
+.clearance-goods .clearance-wrapper .input-custom input:hover,
+.clearance-goods .clearance-wrapper .input-custom textarea:hover {
+  border-color: hsl(0, 0%, 70%);
+}
+
+.clearance-goods .clearance-wrapper .input-custom input:focus,
+.clearance-goods .clearance-wrapper .input-custom textarea:focus {
+  outline-style: none;
+  border-color: #6691e0;
+}
+
+.clearance-goods .clearance-wrapper .input-custom button {
+  width: 150px;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  color: white;
+  cursor: pointer;
+  background-color: #6691e0;
+  border: none;
+  border-radius: 0.5rem;
+  transition-duration: 0.1s;
+}
+
+.clearance-goods .clearance-wrapper .input-custom button:active {
+  background-color: #3669c9;
+}
+
+.clearance-goods .clearance-wrapper .select-custom {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.clearance-goods .clearance-wrapper .select-custom .select-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.clearance-goods .clearance-wrapper .select-custom .select-value i {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+}
+
+.clearance-goods .clearance-wrapper .select-custom .select-value span {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.clearance-goods .clearance-wrapper .number-format-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.clearance-goods .clearance-wrapper .number-format-wrapper .select-number-code {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  .select-code-value {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 0.5rem;
+  background-color: #f6f8fe;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  .select-code-value
+  i:nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  .select-code-value
+  i:nth-child(2) {
+  width: 14px;
+  height: 14px;
+  margin-left: 0.5rem;
+  background-color: #b9b9b9;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul {
+  list-style-type: none;
+  padding: 1.25rem 0 1.25rem 0;
+  margin: 0;
+  background-color: #f6f8fe;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 16px 0 #d99ee242;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.25s;
+  position: absolute;
+  top: 110%;
+  left: 0;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code.isActiveSelect
+  ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li {
+  display: flex;
+  align-items: center;
+  color: #d6d7e3;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  transition-duration: 0.25s;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li:hover {
+  color: white;
+  background-color: #fb66b8;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li.isActiveLi {
+  background-color: transparent;
+  color: #1d1d1d;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li
+  i {
+  transition-duration: 0.25s;
+  margin-right: 1rem;
+  opacity: 0.25;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li:hover
+  i {
+  opacity: 1;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .number-format-wrapper
+  .select-number-code
+  ul
+  li.isActiveLi
+  i {
+  opacity: 1;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom {
+  padding: 0 1rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom label {
+  color: #9f4fde;
+  margin-bottom: 0.5rem;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom label.input-focused {
+  color: #1d1d1d;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom input {
+  display: none;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom .icon-wrapper {
+  padding: 1rem;
+  background-color: #f6f8fe;
+  border-radius: 0.5rem;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.clearance-goods .clearance-wrapper .radio-custom .icon-wrapper i {
+  background-color: #9f4fde;
+}
+
+.clearance-goods
+  .clearance-wrapper
+  .radio-custom
+  .icon-wrapper.checked-payment
+  i {
+  background-color: #1d1d1d;
+}
+
+.clearance-goods .clearance-wrapper .inputs-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clearance-goods .clearance-wrapper .inputs-wrapper input:nth-child(2) {
+  width: 120px;
+  margin-left: 0.5rem;
+}
+
+.clearance-goods .clearance-wrapper .bottom-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.clearance-goods .clearance-wrapper .bottom-input-wrapper span {
+  height: 50px;
+  padding: 1rem 1.5rem;
+  font-size: 12px;
+  color: #9f4fde;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-color: #f6f8fe;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.clearance-goods .clearance-wrapper .bottom-input-wrapper .total-price {
+  height: 50px;
+  box-sizing: border-box;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.clearance-goods .clearance-wrapper .bottom-input-wrapper input {
+  height: 50px;
+  box-sizing: border-box;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+
+.clearance-goods .clearance-wrapper .btn-handler {
+  width: 300px;
+  margin-left: auto;
+  display: block;
+  padding: 1rem 0;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: #6691e0;
+  border: none;
+  transition-duration: 0.2s;
+  font-size: 20px;
+}
+
+.clearance-goods .clearance-wrapper .btn-handler:active {
+  background-color: #3669c9;
+}
+
+.clearance-goods .clearance-wrapper .btn-menu {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #a0a3bd23;
+  color: #3669c9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.clearance-goods .clearance-wrapper .btn-menu:hover {
+  background-color: #3669c9;
+  color: #fff;
+}
+@media screen and (max-width: 1600px) {
+  .clearance-goods .clearance-wrapper .btn-menu.active {
+    top: 0;
+    right: 0;
+  }
+  .clearance-goods .clearance-wrapper .tasks {
+    display: none;
+  }
+  .clearance-goods .clearance-wrapper .tasks.btn-display {
+    display: block;
+    z-index: 200;
+    box-shadow: 0 0 100px rgba(219, 219, 219, 0.5);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+  }
+
+  .clearance-goods .clearance-wrapper .btn-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .clearance-goods .clearance-wrapper .btn-menu {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .clearance-goods .clearance-wrapper .btn-menu {
+    top: 1rem;
+    right: 1rem;
+  }
+  .clearance-goods {
+    padding: 1rem;
+  }
+  .clearance-goods .clearance-wrapper {
+    padding: 1.5rem;
+  }
+  .clearance-goods .clearance-wrapper .input-custom > textarea {
+    min-width: 100%;
+    min-height: 180px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .clearance-goods .clearance-wrapper .inputs-wrapper input:nth-child(2) {
+    width: 120px;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .clearance-goods
+    .clearance-wrapper
+    .number-format-wrapper
+    .select-number-code {
+    padding-top: 0.5rem;
+    padding-left: 0;
+  }
+  .clearance-goods .clearance-wrapper .btn-handler {
+    width: 200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-radius: 0.4rem;
+    font-size: 15px;
+  }
+  .clearance-goods .clearance-wrapper .input-custom {
+    margin-bottom: 0.5rem;
+  }
+}

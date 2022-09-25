@@ -1,0 +1,81 @@
+
+.source-list-item {
+    width: 32.5%;
+    border-radius: .5rem;
+    background-color: #F6F8FE;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+.source-list-item .item-header {
+    font-size: 24px;
+    color: #1D1D1D;
+    margin-bottom: 1rem;
+}
+
+.source-list-item .add-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: white;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.source-list-item .add-input-wrapper span {
+    color: #D5D9E3;
+    margin-right: .5rem;
+    font-size: 24px;
+}
+
+.source-list-item .add-input-wrapper span.plus-hidden {
+    visibility: hidden;
+}
+
+.source-list-item .add-input-wrapper input {
+    background-color: transparent;
+    border: none;
+}
+
+.source-list-item .add-input-wrapper input::placeholder {
+    color: #D5D9E3;
+    font-size: 16px;
+}
+
+.source-list-item .add-input-wrapper input:focus {
+    outline-style: none;
+}
+
+.source-list-item .sub-source-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.source-list-item .sub-source-list .sub-source-list-item {
+    padding-right: .75rem;
+    display: flex;
+    align-items: center;
+}
+
+.source-list-item .sub-source-list .sub-source-list-item span {
+    color: #D5D9E3;
+    margin-right: 12px;
+}
+
+.source-list-item .sub-source-list .sub-source-list-item p {
+    color: #1D1D1D;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .source-list-item {
+        width: 49.5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .source-list-item {
+        width: 100%;
+    }
+}
